@@ -2,10 +2,10 @@ package org.example;
 
 public interface Pitcher {
 
-  public String Pitching(String name);
+  public String pitching(String name);
 
-  public String Catching(String name);
+  public String catching(String name);
 
-  public String Throwing(String name);
+  public String throwing(String name);
 
 }

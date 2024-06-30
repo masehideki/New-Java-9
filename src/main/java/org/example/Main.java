@@ -23,16 +23,16 @@ public class Main {
 
     ChoosingBrakingBall pitcher = new ChoosingBrakingBall();
 //    親クラスメソッドの呼び出し
-    String message1 = pitcher.Pitching(startingLineup.get(nowPitching));
+    String message1 = pitcher.pitching(startingLineup.get(nowPitching));
 //    子クラスメソッドの呼び出し
-    String message2 = pitcher.Choosing("スライダー");
+    String message2 = pitcher.choosing("スライダー");
 
     printer.printMessage(message1);
     printer.printMessage(message2);
 
     int nowHitting = 1;
     BatterAction batterAction = new BatterAction();
-    String message3 = batterAction.Batting(startingLineup.get(nowHitting));
+    String message3 = batterAction.batting(startingLineup.get(nowHitting));
     printer.printMessage(message3);
 
 
